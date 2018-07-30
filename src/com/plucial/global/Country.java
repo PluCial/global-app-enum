@@ -260,6 +260,7 @@ public enum Country {
 //MG("MDG",450,"マダガスカル","261"),
 //IM("IMN",833,"マン島","44"),
 
+
     private String name;
     private String alpha3;
     private int numeric;
