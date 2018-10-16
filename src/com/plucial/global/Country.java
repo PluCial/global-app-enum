@@ -298,4 +298,12 @@ public enum Country {
     public Currencie getCurrencie() {
         return currencie;
     }
+
+    /**
+     * Propertis ファイルキーを取得
+     * @return
+     */
+    public String getPropertieKey() {
+        return "country." + this.toString();
+    }
 }

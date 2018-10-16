@@ -30,7 +30,7 @@ public enum Lang implements LangEnum {
     ko("ko", "韓国語", Country.KR, "한국어"),
     la("la", "ラテン語", Country.VA, "Latine"),
     lv("lv", "ラトビア語 (レット語)", Country.LV, "Latvijā"),
-    mk("mk", "マカドニア語", Country.MK, "ПЈР македонски"), 
+    mk("mk", "マカドニア語", Country.MK, "ПЈР македонски"),
     ms("ms", "マレー語", Country.MY, "Melayu"),
     mt("mt", "マルタ語", Country.MT, "Malti"),
     no("no", "ノルウェー語", Country.NO, "norsk"),
@@ -49,8 +49,8 @@ public enum Lang implements LangEnum {
     lt("lt", "リトアニア語", Country.LT, "Lietuvos"),
     vi("vi", "ベトナム語",Country.VN, "Tiếng Việt"),
     sr("sr", "セルビア語", Country.RS, "Srpski"),
-    
-    yi("yi", "イディッシュ語", Country.DE, "ייִדיש"), 
+
+    yi("yi", "イディッシュ語", Country.DE, "ייִדיש"),
     ht("ht", "ハイチ語", Country.HT, "kreyòl ayisyen"),
     gl("gl", "ガリシア語", Country.ES, "galego"),
     et("et", "エストニア語", Country.EE, "eesti"),
@@ -67,9 +67,9 @@ public enum Lang implements LangEnum {
     eo("eo", "エスペラント語", Country.DE, "esperanto"),
     ca("ca", "カタロニア語", Country.ES, "català"),
     eu("eu", "バスク語", Country.ES, "Euskal"),
-    
-    
-    
+
+
+
     hy("hr", "アルメニア語", Country.AM, "հայերեն"), // hy Armenian
     bs("bs", "ボスニア語", Country.BA, "bosanski"), // bs Bosnian
     ceb("ceb", "セブアノ語", Country.PH, "Sinugboanon"), // ceb Cebuano
@@ -106,6 +106,14 @@ public enum Lang implements LangEnum {
         this.langKey = langKey;
         this.country = country;
         this.name = name;
+    }
+
+    /**
+     * Propertis ファイルキーを取得
+     * @return
+     */
+    public String getPropertieKey() {
+        return "lang." + this.toString();
     }
 
     public String getLangKey() {
